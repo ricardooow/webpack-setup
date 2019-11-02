@@ -1,44 +1,53 @@
 {
-	"name": "react-setup",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "webpack-dev-server --mode development --open --hot",
-		"format": "prettier --write \"src/**/*.js\"",
-		"eslint-fix": "eslint --fix \"src/**/*.js\"",
-		"build": "webpack --mode production",
-		"develop": "webpack --mode development"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"dependencies": {
-		"react": "^16.11.0",
-		"react-dom": "^16.11.0"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.6.4",
-		"@babel/preset-env": "^7.6.3",
-		"@babel/preset-react": "^7.6.3",
-		"@babel/preset-typescript": "^7.6.0",
-		"babel-eslint": "^10.0.3",
-		"babel-loader": "^8.0.6",
-		"css-loader": "^3.2.0",
-		"eslint": "^6.6.0",
-		"eslint-config-prettier": "^6.5.0",
-		"eslint-config-react": "^1.1.7",
-		"eslint-loader": "^3.0.2",
-		"eslint-plugin-react": "^7.16.0",
-		"html-webpack-plugin": "^3.2.0",
-		"node-sass": "^4.13.0",
-		"prettier": "^1.18.2",
-		"sass-loader": "^8.0.0",
-		"style-loader": "^1.0.0",
-		"typescript": "^3.6.4",
-		"webpack": "^4.41.2",
-		"webpack-cli": "^3.3.10",
-		"webpack-dev-server": "^3.9.0"
-	}
+  "name": "react-setup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development --open --hot --config ./config/webpack.config.js",
+    "format": "prettier --write \"src/**/*.js\"",
+    "eslint-fix": "eslint --fix \"src/**/*.js\"",
+    "build": "webpack --mode production --config ./config/webpack.config.js",
+    "develop": "webpack --mode development --config ./config/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-react": "^7.16.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.13.0",
+    "prettier": "^1.18.2",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "babel": {
+    "extends": "./config/.babelrc"
+  },
+  "prettier": {
+    "extends": "./config/.prettierrc.js"
+  },
+  "eslintConfig": {
+    "extends": "./config/.eslintrc"
+  }
 }
