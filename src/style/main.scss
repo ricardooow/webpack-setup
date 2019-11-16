@@ -1,4 +1,9 @@
-@import 'header.scss';
+@import "./variables"; //Any variables that will be used throughout styles
+@import "./mixins"; //Any mixins used in the project
+@import "./keyframes"; //Any animation styles
+@import "./elements"; //Any generic styles for the site. Shouldn't have any classes or ids for selectors.
+
+@import "header.scss";
 $color: #f5adad;
 body {
   background-color: $color;
