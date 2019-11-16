@@ -1,0 +1,13 @@
+.btn {
+  appearance: none;
+  border: none;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btnPrimary {
+  composes: btn; /* extends btnPrimary with styles from btn */
+  background-color: #3498db;
+}
