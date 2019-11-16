@@ -9,7 +9,8 @@
     "format": "prettier --write \"src/**/*.js\"",
     "eslint-fix": "eslint --fix \"src/**/*.js\"",
     "build": "webpack --mode production --config ./config/webpack.config.js",
-    "develop": "webpack --mode development --config ./config/webpack.config.js"
+    "develop": "webpack --mode development --config ./config/webpack.config.js",
+    "storybook": "start-storybook"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,7 @@
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
     "@babel/preset-typescript": "^7.7.2",
+    "@storybook/react": "^5.2.6",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
